@@ -1,0 +1,71 @@
+
+/* ------АНИМАЦИИ-------- */
+
+.animation{
+    width:700px;
+    height: 100px;
+    background-color: grey;
+    padding:50px;
+}
+.animation__circle{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left:0;
+    animation-name: white-circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;    
+}
+.animation:hover .animation__circle{
+    animation-play-state: paused;
+}
+@keyframes white-circle{
+    0%{
+        left: 0;
+    }
+    50%{
+        border-radius: 10%;
+        background-color: blueviolet ;
+    }
+    100%{
+        left: 500px;
+        background-color: yellow;
+    }
+}
+
+/* ------АНИМАЦИИ-------- */
+
+/* ------переходы-------- */
+.transition{
+    width:700px;
+    height: 100px;
+    text-align: center;
+    background-color: pink;
+    margin-top:50px;
+    padding: 50px;
+}
+.transition__button{
+    text-decoration:none;
+    position: relative;
+    width: 185px;
+    text-align: center;
+    height: 50.99px;
+    justify-content: center;
+    background: #142D47;
+    mix-blend-mode: normal;
+    border: 3px solid rgba(243, 251, 57, 0.57);
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition-duration: 2s;
+}
+.transition__button:hover{
+    top:2px;
+    background-color: #F3FB3991;
+}
+.text{
+    color:white;
+}
